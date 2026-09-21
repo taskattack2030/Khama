@@ -1,0 +1,6 @@
+{
+  "name": "كُن سفيرًا للاستدامة - جامعة بنها",
+  "description": "المنصة الرسمية لمبادرة كُن سفيرًا للاستدامة بكلية الفنون التطبيقية - جامعة بنها. بنك الخامات الرقمي، حساب البصمة الكربونية، وحلول التصميم المستدام.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

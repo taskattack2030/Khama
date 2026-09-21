@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient inside the triangle -->
+    <linearGradient id="fapaBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7" />
+      <stop offset="45%" stop-color="#FFFDF7" />
+      <stop offset="100%" stop-color="#EAF5E9" />
+    </linearGradient>
+
+    <!-- Outer Orange Border Gradient -->
+    <linearGradient id="fapaBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F58220" />
+      <stop offset="50%" stop-color="#FFA834" />
+      <stop offset="100%" stop-color="#E66A1F" />
+    </linearGradient>
+
+    <!-- Path for curved "BENHA UNIVERSITY" text -->
+    <path id="benhaTextArc" d="M 125,296 Q 250,336 375,296" fill="none" />
+  </defs>
+
+  <!-- ==================== TRIANGLE EMBLEM ==================== -->
+  <g id="triangle-emblem">
+    <!-- Outer Triangle Shape with Orange Border -->
+    <polygon
+      points="250,16 476,306 24,306"
+      fill="url(#fapaBgGrad)"
+      stroke="url(#fapaBorderGrad)"
+      stroke-width="12"
+      stroke-linejoin="round"
+    />
+
+    <!-- Inner Golden Accent Line -->
+    <polygon
+      points="250,28 462,298 38,298"
+      fill="none"
+      stroke="#FFD580"
+      stroke-width="3"
+      stroke-linejoin="round"
+      opacity="0.8"
+    />
+
+    <!-- Left & Right Corner Gear Cogs (Applied Arts / Industrial Arts Motif) -->
+    <!-- Left corner gears -->
+    <g fill="#102A43">
+      <path d="M 68 288 L 74 274 L 84 278 L 78 292 Z" />
+      <path d="M 88 294 L 94 280 L 104 284 L 98 298 Z" />
+      <path d="M 108 298 L 112 284 L 122 287 L 118 301 Z" />
+      <!-- Left corner arc base block -->
+      <path d="M 52 260 L 62 250 L 114 296 L 102 304 Z" />
+    </g>
+
+    <!-- Right corner gears -->
+    <g fill="#102A43">
+      <path d="M 432 288 L 426 274 L 416 278 L 422 292 Z" />
+      <path d="M 412 294 L 406 280 L 396 284 L 402 298 Z" />
+      <path d="M 392 298 L 388 284 L 378 287 L 382 301 Z" />
+      <!-- Right corner arc base block -->
+      <path d="M 448 260 L 438 250 L 386 296 L 398 304 Z" />
+    </g>
+
+    <!-- Left Slanted Arabic Text: "بنها" -->
+    <g transform="translate(182, 116) rotate(-59.5)">
+      <text
+        x="0"
+        y="0"
+        fill="#102A43"
+        font-size="44"
+        font-weight="900"
+        font-family="'Cairo', 'Tajawal', 'Traditional Arabic', Arial, sans-serif"
+        letter-spacing="0.04em"
+      >
+        بنها
+      </text>
+    </g>
+
+    <!-- Right Slanted Arabic Text: "جامعة" -->
+    <g transform="translate(318, 116) rotate(59.5)">
+      <text
+        x="-80"
+        y="0"
+        fill="#102A43"
+        font-size="44"
+        font-weight="900"
+        font-family="'Cairo', 'Tajawal', 'Traditional Arabic', Arial, sans-serif"
+        letter-spacing="0.04em"
+      >
+        جامعة
+      </text>
+    </g>
+
+    <!-- Lower Arched English Text: "BENHA UNIVERSITY" -->
+    <text fill="#102A43" font-size="20" font-weight="900" font-family="'Times New Roman', Georgia, serif" letter-spacing="0.16em">
+      <textPath href="#benhaTextArc" startOffset="50%" text-anchor="middle">
+        BENHA UNIVERSITY
+      </textPath>
+    </text>
+
+    <!-- ==================== CENTRAL ICONOGRAPHY ==================== -->
+    <!-- 1. The Clock Tower of Benha (Orange Terracotta Minaret / Obelisk) -->
+    <g id="benha-tower">
+      <!-- Main Tower Body -->
+      <rect x="234" y="52" width="32" height="156" fill="#ED6B24" />
+      
+      <!-- Top Battlements / Crenellations (3 teeth) -->
+      <rect x="234" y="42" width="8" height="10" fill="#ED6B24" />
+      <rect x="246" y="42" width="8" height="10" fill="#ED6B24" />
+      <rect x="258" y="42" width="8" height="10" fill="#ED6B24" />
+      
+      <!-- Tower Horizontal Ledge Trim -->
+      <rect x="232" y="86" width="36" height="4" fill="#D95714" />
+      
+      <!-- Tower Slit Window -->
+      <rect x="246" y="156" width="8" height="22" rx="2" fill="#FFFDF8" stroke="#D95714" stroke-width="1.5" />
+    </g>
+
+    <!-- 2. The Bridge & Aqueduct Structure (representing the Nile Barrages in Qalyubia / Benha) -->
+    <g id="benha-bridge">
+      <!-- Main Bridge Span -->
+      <path
+        d="M 184 208 L 316 208 L 316 234 L 184 234 Z"
+        fill="#ED6B24"
+      />
+      <!-- Cutout Arches (4 architectural arches under bridge) -->
+      <path
+        d="M 194 234 A 10 10 0 0 1 214 234 Z
+           M 226 234 A 10 10 0 0 1 246 234 Z
+           M 254 234 A 10 10 0 0 1 274 234 Z
+           M 286 234 A 10 10 0 0 1 306 234 Z"
+        fill="#FFF9E8"
+      />
+    </g>
+
+    <!-- 3. Nile Water Waves (3 Cerulean Blue Undulations) -->
+    <g id="nile-waves" stroke="#3498DB" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M 184 238 C 196 234, 204 242, 216 238 C 228 234, 236 242, 248 238 C 260 234, 268 242, 280 238 C 292 234, 304 242, 316 238" />
+      <path d="M 184 246 C 196 242, 204 250, 216 246 C 228 242, 236 250, 248 246 C 260 242, 268 250, 280 246 C 292 242, 304 250, 316 246" />
+      <path d="M 184 254 C 196 250, 204 258, 216 254 C 228 250, 236 258, 248 254 C 260 250, 268 258, 280 254 C 292 250, 304 258, 316 254" />
+    </g>
+
+    <!-- 4. Open Book at the Foundation (Knowledge & Academic Foundation) -->
+    <g id="open-book">
+      <!-- Dark outline & shadows -->
+      <path
+        d="M 250 282 C 235 273, 202 273, 185 276 L 185 285 C 205 282, 235 282, 250 289 C 265 282, 295 282, 315 285 L 315 276 C 298 273, 265 273, 250 282 Z"
+        fill="#102A43"
+      />
+      <!-- White Pages (Left and Right Wings) -->
+      <path
+        d="M 250 280 C 236 272, 206 272, 186 274 C 206 268, 236 268, 250 277 C 264 268, 294 268, 314 274 C 294 272, 264 272, 250 280 Z"
+        fill="#FFFFFF"
+        stroke="#102A43"
+        stroke-width="1.5"
+      />
+      <!-- Page layer ribs -->
+      <path d="M 250 277 L 250 288" stroke="#102A43" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- ==================== HORIZONTAL DIVIDER BAR ==================== -->
+  <line x1="25" y1="360" x2="475" y2="360" stroke="#102A43" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- ==================== FACULTY TITLE IN ARABIC ==================== -->
+  <text
+    x="250"
+    y="418"
+    text-anchor="middle"
+    fill="#102A43"
+    font-size="44"
+    font-weight="900"
+    font-family="'Cairo', 'Tajawal', 'Traditional Arabic', sans-serif"
+    letter-spacing="0.02em"
+  >
+    كلية الفنون التطبيقية
+  </text>
+
+  <!-- ==================== FACULTY TITLE IN ENGLISH ==================== -->
+  <text
+    x="250"
+    y="464"
+    text-anchor="middle"
+    fill="#102A43"
+    font-size="25"
+    font-weight="800"
+    font-family="'Times New Roman', Georgia, serif"
+    letter-spacing="0.12em"
+  >
+    FACULTY OF APPLIED ARTS
+  </text>
+</svg>
